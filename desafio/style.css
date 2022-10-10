@@ -10,7 +10,7 @@
     --cor2: #D8FFDB;
     --cor3: #008F8C;
     --cor4: #015958;
-    --cor5: #;
+    --cor5: #003332;
 
     --fonte-destaque: 'Bebas Neue';
     --fonte-pixel: 'Silkscreen';
@@ -42,6 +42,7 @@ header > p{
     color: var(--cor2);
     font-family: var(--fonte-titulo);
     padding-bottom: 20px;
+    margin: 5px;
 }
 nav{
     font-family: var(--fonte-titulo);
@@ -85,6 +86,20 @@ main p{
 }
 main img{
     width: 100%;
+}
+div.video{
+    background-color: var(--cor5);
+    margin-bottom: 15px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 footer{
     background-image: linear-gradient(#023535,#001414);
