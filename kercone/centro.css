@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root{
+    --cor-primaria-success : #260B01;
+    --cor-hover-success: #F2A594;
+    --cor-secundaria-success : rgb(255, 255, 255);
+}
 body{
     text-align: center;
     background-image: linear-gradient(to bottom, #ffd2c8, #c49287);
@@ -8,11 +13,6 @@ body{
     background-attachment: fixed;
     color: #735F5E;
     font-family: 'Times New Roman', Times, serif;   
-}
-:root{
-    --cor-primaria-success : #260B01;
-    --cor-hover-success: #F2A594;
-    --cor-secundaria-success : rgb(255, 255, 255);
 }
 .btn{
     background-color: #260B01;
@@ -63,7 +63,7 @@ h2{
 footer{
     background-color: #260B01;
     color: #F2A594;
-    margin: auto;
+    margin: -10px;
     text-align: center;
     padding: 1%;
 }
