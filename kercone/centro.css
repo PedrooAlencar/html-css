@@ -7,30 +7,49 @@
 }
 body{
     text-align: center;
-    background-image: linear-gradient(to bottom, #ffd2c8, #c49287);
+    background: linear-gradient(to bottom, #ffd2c8, #c49287) center center no-repeat fixed;
+    /*background-image: linear-gradient(to bottom, #ffd2c8, #c49287);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     color: #735F5E;
     font-family: 'Times New Roman', Times, serif;   
 }
-.btn{
+a{
+    color: #580000;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(63, 0, 0, 0.445);
+}
+a:hover{
+    color: #5800007e;
+}
+img.menor{
+    width: 148px;
+    border-radius: 10px;
+}
+img.media{
+    display: inline-block;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123);
+}
+.botao{
     background-color: #260B01;
     color: #F2A594;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
     border-radius: 20px;
     padding: 5px 3px 5px 3px;
-    width: 200px;
+    width: 175px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
     text-decoration: none;
     cursor: pointer;
 }
-.btn-success{
+.botao-success{
     background-color: var(--cor-primaria-success);
     outline: none;
 }
-.btn-success:hover{
+.botao-success:hover{
     background-color: var(--cor-hover-success);
     color: #260B01;
 }
@@ -40,17 +59,8 @@ p {
     width: 700px;
     font-size: 1.5em;
 }
-.menor{
-    width: 148px;
-    border-radius: 10px;
-}
-.media{
-    display: inline-block;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123);
-}
 h1{
+    padding: 2px;
     background-color: #74351e;
     color: #F2A594;
     border-radius: 5px;
@@ -59,11 +69,10 @@ h2{
     color: #260B01;
     display: inline-block;
 }
-
 footer{
     background-color: #260B01;
     color: #F2A594;
-    margin: -10px;
+    margin: 30px -10px -10px -10px;
     text-align: center;
-    padding: 1%;
+    padding: 2%;
 }
