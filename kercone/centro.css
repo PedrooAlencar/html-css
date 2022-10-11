@@ -5,15 +5,24 @@
     --cor-hover-success: #F2A594;
     --cor-secundaria-success : rgb(255, 255, 255);
 }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    margin: auto;
+}
 body{
     text-align: center;
-    background: linear-gradient(to bottom, #ffd2c8, #c49287) center center no-repeat fixed;
+    background:white url(imagens/fundo.png) center center no-repeat fixed;
     /*background-image: linear-gradient(to bottom, #ffd2c8, #c49287);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;*/
     color: #735F5E;
-    font-family: 'Times New Roman', Times, serif;   
+    font-family: 'Times New Roman', Times, serif;  
+    margin: auto;
+    max-width: 1200px; 
 }
 a{
     color: #580000;
@@ -29,7 +38,7 @@ img.menor{
 }
 img.media{
     display: inline-block;
-    width: 300px;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.123);
 }
@@ -39,8 +48,8 @@ img.media{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 12px;
     border-radius: 20px;
-    padding: 5px 3px 5px 3px;
-    width: 175px;
+    padding: 10px 5px 10px 5px;
+    width: 200px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
     text-decoration: none;
     cursor: pointer;
@@ -55,12 +64,14 @@ img.media{
 }
 p {
     margin: auto;
+    padding: 10px;
     text-align: justify;
-    width: 700px;
+    max-width: 700px;
     font-size: 1.5em;
 }
 h1{
     padding: 2px;
+    margin: 10px;
     background-color: #74351e;
     color: #F2A594;
     border-radius: 5px;
@@ -72,7 +83,15 @@ h2{
 footer{
     background-color: #260B01;
     color: #F2A594;
-    margin: 30px -10px -10px -10px;
+    margin: 30px 0px -80px 0px;
     text-align: center;
     padding: 2%;
+}
+p.sobre{
+    text-align: center; 
+    display: inline-block;
+    max-width: 700px;
+}
+p > a{
+    max-width: 50px;
 }
