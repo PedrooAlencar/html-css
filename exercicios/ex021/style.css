@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* height: 100vh;
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; */
+    background: black url(fundo.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+html, body{
+    min-height: 100vh;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 2em;
+    background-attachment: fixed;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.397);
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.445);
+    color: aliceblue;
+    padding: 5px;
+    text-align: justify;
+    width: 400px;
+    height: 300px;
+}
+section#img01{
+    background-image: url(IMG_1237.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(IMG_8887.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#img03{
+    background-image: url(IMG_8928.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#img04{
+    background-image: url(IMG_6028.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#img05{
+    background-image: url(IMG_8707.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+footer{
+    height: 300px;
+    text-align: center;
+    padding-top: 200px;
+}
