@@ -90,12 +90,12 @@ footer{
     background-color: #260B01;
     color: #F2A594;
     margin: 30px 0px 0px 0px;
-    text-align: center;
-    padding: 2%;
+    padding: 20px;
+    text-align: justify;
 }
 footer > p {
+    text-align: justify;
     font-size: 16px;
-    text-align: center;
     color: #F2A594;
 }
 p.sobre{
@@ -105,4 +105,28 @@ p.sobre{
 }
 p > a{
     max-width: 50px;
+}
+ul{
+
+    line-height: 2em;
+    margin: 0;
+}
+.negrito{
+    font-size: 25px;
+}
+.container{
+    margin: auto;
+    padding: 5px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Geneva, Tahoma, sans-serif;
+}
+.footerrow{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footercol{
+    width: 25%;
+    line-height: 2em;
+    font-size: 18px;
 }
