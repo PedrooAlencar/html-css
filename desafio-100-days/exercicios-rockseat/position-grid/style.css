@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    display: grid;
+    height: 100vh;
+
+    grid-template-areas: /*Coluna 1 2*/
+         /*Linha: 1*/  "header header"     
+         /*Linha: 2*/  "main aside"
+         /*Linha: 3*/  "footer footer";
+                                       /*Tamanho*/
+    grid-template-rows: 30px 1fr 30px; /*Linhas*/
+    grid-template-columns: 1fr 200px;  /*Colunas*/
+}
+header{
+    grid-area: header;
+    background-color: rgb(41, 130, 255);
+
+    display: flex;
+    justify-content: space-between; /*Espaço entre os 2*/
+    align-items: center; /*Centraliza a linha*/
+}
+main{
+    grid-area: main;
+    background-color: rgb(1, 101, 241);
+}
+aside{
+    grid-area: aside;
+    background-color: rgb(0, 76, 182);
+}
+footer{
+    grid-area: footer;
+    background-color:rgb(0, 47, 112) ;
+}

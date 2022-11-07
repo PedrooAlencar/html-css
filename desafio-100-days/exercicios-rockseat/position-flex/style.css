@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    /* height e display(vh) atuam juntos para o posicionamento*/
+    height: 100vh; /* Leva imagem para o meio da tela verticalmente*/
+    display: flex; /* Deixa os blocos alinhados na horizontal*/
+    align-items: center;
+}
+.container{
+    /* width e display(vw) atuam juntos para o posicionamento*/
+    width: 100vw; /* Leva imagem para o meio da tela horizontalmente*/
+    display: flex; /* Deixa os blocos alinhados na horizontal*/
+    justify-content: center;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
