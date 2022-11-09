@@ -1,0 +1,24 @@
+<!--
+    <form action="">
+    <fieldset disabled> disabled -> desabilita inserção de dados
+        <legend>Contato</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form> 
+-->
+
+<!--Também existe a possibilidade o fieldset estar fora do forms, mas pode ser vinculado da mesma forma, criando um id, exemplo abaixo-->
+
+<form id="contato" action="">
+    <button>Enviar</button>
+</form>
+
+<fieldset form="contato" name="inputs-contact">
+    <legend>Contato</legend>
+
+    <label for="">Nome</label>
+    <input type="text">
+    <!--Os dados inseridos aqui vão para o form, pois está relacionado pelo id -->
+</fieldset>

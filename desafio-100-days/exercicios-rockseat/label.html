@@ -1,0 +1,38 @@
+<!--Formatando texto "linkado" com caixa de texto, nesse caso, for não sendo necessário-->
+<label>
+    Nome
+    <input type="text">
+</label>
+<br><br>
+
+<!--Outra forma de associa-las, for e id-->
+<label for="nome">Nome Completo</label>
+<input id="nome" type="text">
+<br><br>
+
+<!--Botão
+    type="reset" -> Limpa o conteúdo do input
+    value="" -> dá valor ao texto e retorna sempre esse valor quando o botão for clicado
+--> 
+<form action="">
+    <input type="text" value="Digite aqui">
+    <button type="reset">Limpar</button>
+</form>
+<br><br>
+
+<!--
+    autofocus -> serve para ser 100% focado, caso a pessoa aperte a tecla 'enter', o botão será acionado
+    disabled -> Serve para desabilitar o botão
+-->
+<button autofocus>Enviar</button>
+<button disabled>Desabilitado</button>
+
+<!--Button abaixo será entendido mais pra frente-->
+<button type="submit" name="button" value="valor qualquer">Mais pra frente</button>
+
+<!--Esse botão envia o form que está na página linkado ao id-->
+<form action="" id="meu-form"></form>
+<button type="submit" form="meu-form">Enviar</button>
+<br><br>
+
+<!---->
