@@ -1,19 +1,38 @@
 <!--Aceita diversos tipos de dado-->
+<input type="text"> <!--Texto--> <br><hr>
+<input type="date"> <!--Texto--> <br><hr>
+<input type="number"> <!--Só aceita número--> <br><hr>
+<input type="email"> <!--Só aaceita email--> <br><hr>
+<input type="file"> <!--Puxa arquivos do pc (pasta)--> <br><hr>
+<input type="password"> <!--Deixa em modo senha--> <br><hr>
 
-<input type="text"> <!--Texto--> <br><br>
-<input type="date"> <!--Texto--> <br><br>
-<input type="number"> <!--Só aceita número--> <br><br>
-<input type="email"> <!--Só aaceita email--> <br>
-<input type="file"> <!--Puxa arquivos do pc (pasta)--> <br><br>
-<input type="password"> <!--Deixa em modo senha--> <br><br>
+<input type="email" autocomplete="email"> <!--Caso o navegador que esteja usando tiver dados salvos, ele irá sugerir automaticamente esse dado--> <br><hr>
 
-<input type="email" autocomplete="email"> <!--Caso o navegador que esteja usando tiver dados salvos, ele irá sugerir automaticamente esse dado--> <br><br>
-
-<input type="text" value="texto" readonly> <!--Diferente do disabled, o readonly não deixa o aspecto opaco, mas deixa em forma de texto normal, porém sem pode mexer--> <br><br>
+<input type="text" value="texto" readonly> <!--Diferente do disabled, o readonly não deixa o aspecto opaco, mas deixa em forma de texto normal, porém sem pode mexer--> <br><hr>
 
 <form id="meu-form"></form> 
-<input name="email" type="type" form="meu-form"> <!--Puxar form dentro do input, sempre necessário deixar o name, para evitar futuros problemas--> <br><br>
+<input name="email" type="type" form="meu-form"> <!--Puxar form dentro do input, sempre necessário deixar o name, para evitar futuros problemas--> <br><hr>
 
-<input type="date" required> <!--Required torna obrigatório o preenchimento do input--> <br><br>
+<input type="date" required> <!--Required torna obrigatório o preenchimento do input--> <br><hr>
 
-<input type="text" placeholder="Digite seu nome"> <!--Placeholder server para inserir dados dentro da caixa de texto, mas não substitui o label-->
+<input type="text" placeholder="Digite seu nome"> <!--Placeholder server para inserir dados dentro da caixa de texto, mas não substitui o label--><br><hr>
+
+<!--Mínimo e máximo de caracteres
+minlength e maxlength-->
+<form action="">
+    <input type="password"
+    minlength="6"
+    maxlength="10"
+    size="8"> <!--Size aumenta o tamanho da caixa-->
+</form> <br><hr>
+
+<!-- Pattern cria mais regras para que o usuário siga, no caso abaixo é necessário colocar além de minimo e maximo, hexadecimal-->
+<form action="">
+    <input type="password"
+    pattern="[0-9a-fA-F]{4,8}" 
+    title="Digite sua senha com Hexadecimal"
+    placeholder="Sua senha aqui"
+    inputmode="numeric"> <!--Abre apenas o teclado numérico no dispositivo(CELULAR)-->
+
+    <button type="submit">Enviar</button>
+</form>
