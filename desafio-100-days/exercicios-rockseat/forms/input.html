@@ -1,0 +1,19 @@
+<!--Aceita diversos tipos de dado-->
+
+<input type="text"> <!--Texto--> <br><br>
+<input type="date"> <!--Texto--> <br><br>
+<input type="number"> <!--Só aceita número--> <br><br>
+<input type="email"> <!--Só aaceita email--> <br>
+<input type="file"> <!--Puxa arquivos do pc (pasta)--> <br><br>
+<input type="password"> <!--Deixa em modo senha--> <br><br>
+
+<input type="email" autocomplete="email"> <!--Caso o navegador que esteja usando tiver dados salvos, ele irá sugerir automaticamente esse dado--> <br><br>
+
+<input type="text" value="texto" readonly> <!--Diferente do disabled, o readonly não deixa o aspecto opaco, mas deixa em forma de texto normal, porém sem pode mexer--> <br><br>
+
+<form id="meu-form"></form> 
+<input name="email" type="type" form="meu-form"> <!--Puxar form dentro do input, sempre necessário deixar o name, para evitar futuros problemas--> <br><br>
+
+<input type="date" required> <!--Required torna obrigatório o preenchimento do input--> <br><br>
+
+<input type="text" placeholder="Digite seu nome"> <!--Placeholder server para inserir dados dentro da caixa de texto, mas não substitui o label-->
