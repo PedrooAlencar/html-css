@@ -1,4 +1,4 @@
-/* 
+/* MANIPULAÇÃO DE DADOS
 Type conversion (typecasting) vs Type coesion
 
     Type coesion: Dados são alterados de forma automática, sem manipulção

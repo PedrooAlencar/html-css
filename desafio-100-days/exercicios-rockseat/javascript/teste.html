@@ -1,51 +1,34 @@
 <script>
-//Separando textos que contém espaços, em um novo array onde cada texto é uma posição do array
-let phrase = "Eu quero viver algo novo!"
-let myArray = phrase.split(" ") //Separando por espaço (pode ser qualquer outro elemento para separar, como , . "" ou até letras)
-console.log(myArray)
-//Para substituir o espaço por outro item
-let phraseWithUnderscore = myArray.join("_")
-console.log(phraseWithUnderscore)
-
-//Verificar se o texto contém uma palavra em específico
-let phrase1 = "Vem me visitar hoje aqui!"
-console.log(phrase1.includes("Vem")) // Letras maiúsculas e minúsculas fazem a diferença
-
-//Criar Array com construtor
-// let myArray2 = ['a', 'b', 'c'] - Array sem construtor
-let myArray3 = new Array('a', 'b', 'c') //Array com construtor
-console.log(myArray)
-
-//Contar elementos de um array
-console.log(["a", 
-{type: "array"}, 
-function() { return "alo"},
-][2]()) //esse [2]() busca o segundo da lista e retorna o alo - se fosse pra buscar o objeto na posição 1, seria [1].type
-//versão mais simplificada de fazer essa manipulação
-console.log(["a", "b", "c"].length) //mostra quantos elementos tem no array
-
-//Transformar uma cadeia de caracteres em elementos de um array
-let word2 = "manipulação"
-console.log(Array.from(word2)) //cada letra virou um elemento do array, 0 = m / 1 = a / 2 = n etc
-
-//Manipulando arrays
-let techs = ["html", "css", "js"]
-//adicionar um item no fim
-console.log(techs.push("nodejs")) //foi adicionado nodejs depois do js
-//adicionar no começo
-techs.unshift("sql") // Adicionado antes do html
-//Remover do final
-techs.pop() //Já escluiu a última info
-techs.pop() //Continua removendo
-//Removendo do começo
-techs.shift() //removel o primeiro item
-//pegar somente alguns elementos do Array
-console.log(techs.slice(1, 2))// (posição, até qual item irá buscar) //Não modifica, apenas da como retorno
-//Remover 1 ou mais itens em qualquer posição do array
-techs.splice(1, 2) //Removeu 1, até quantos eu quiser, que foi 2
-//Encontrar posição de um elemento no array
-let index = techs.indexOf('css') //Qual é o idnex do css?
-console.log(index, 1) // encontrei a pósição, agora se eu quiser excluir, bastaa pegar a posilção e dar um techs.splice(index, ')
-
-console.log(techs)
+//Operadores de comparação
+// = receber / == igual
+let one = 1
+let two = 2
+// Comparando com igual
+console.log(two == 1) //false
+console.log(one == "1") //True
+//Comparando com diferente de
+console.log(one != two) //true
+console.log(one != 1) //false
+console.log(one != "1") //false
+//Comparando de forma precisa
+console.log(one !== 1) //false
+console.log(one !== "1") //true porque ele verifica o tipo de dado, como o one declarado é um number e o escrito é string, ele dá true
+//=== os 2 primeiros iguais sãoos valores, e o terceiro é o tipo
+//Comparando maior e menor
+console.log(one >= 1) //True
+console.log(two <= one) //false
+//Operadores de atribuição (Assigment)
+let x
+//assigment
+x = 1
+//adition / subtraction / multiplication / division / remainder assignment
+//Todos citados acimas servem como o exemplo abaixo
+x += 2 // Soma x + ele mesmo (x = x + 2)
+console.log(x)
+//Operadores lógicos
+// and && / or || / not !
+let pao = true
+let queijo = false
+const niceBreakfast = pao || queijo ? 'Café top' : 'Café ruim' //condicional
+console.log(niceBreakfast)
 </script>
