@@ -1,36 +1,31 @@
 <script>
-    function getScore(score) {
-let scoreA = score >= 90 && score <= 100
-let scoreB = score >= 80 && score <= 89
-let scoreC = score >= 70 && score <= 79
-let scoreD = score >= 60 && score <= 69
-let scoreF = score < 60 && score >= 0
-let scoreFinal;
-
-    if (scoreA){
-        scoreFinal = 'A'
-    } else if(scoreB){
-        scoreFinal = 'B'
-    }
-    else if(scoreB){
-        scoreFinal = 'C'
-    }
-    else if(scoreC){
-        scoreFinal = 'D'
-    }
-    else if(scoreD){
-        scoreFinal = 'E'
-    }
-    else if(scoreF){
-        scoreFinal = 'F'
-    } else{
-        scoreFinal = "Nota inválida"
-    }
-return scoreFinal
+    let family = {
+    receitas: [2500, 3200, 250.32, 321.34],
+    despesas: [320.34, 128.32, 321, 1000]
 }
-console.log(getScore(50))
-console.log(getScore(60))
-console.log(getScore(70))
-console.log(getScore(80))
-console.log(getScore(91))
+
+function sum(array) {
+    let total = 0
+    for(let value of array){ //pega valor do array
+        total += value
+    }
+    return total
+}
+
+function calcularBalanco(){
+    const calculoReceitas = sum(family.receitas)
+    const calculoDespesas = sum(family.despesas)
+
+    const total = calculoReceitas - calculoDespesas
+
+    const ok = total >= 0
+    let message = "negativo"
+    if(ok){
+        message = "positivo"
+    }
+    console.log(`Seu saldo é ${message}: ${total}`)
+
+}
+calcularBalanco()
+
 </script>

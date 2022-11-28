@@ -57,19 +57,26 @@ console.log(Array.from(word2)) //cada letra virou um elemento do array, 0 = m / 
 
 //Manipulando arrays
 let techs = ["html", "css", "js"]
+
 //adicionar um item no fim
 console.log(techs.push("nodejs")) //foi adicionado nodejs depois do js
+
 //adicionar no começo
 techs.unshift("sql") // Adicionado antes do html
+
 //Remover do final
 techs.pop() //Já escluiu a última info
 techs.pop() //Continua removendo
+
 //Removendo do começo
 techs.shift() //removel o primeiro item
+
 //pegar somente alguns elementos do Array
 console.log(techs.slice(1, 2))// (posição, até qual item irá buscar) //Não modifica, apenas da como retorno
+
 //Remover 1 ou mais itens em qualquer posição do array
 techs.splice(1, 2) //Removeu 1, até quantos eu quiser, que foi 2
+
 //Encontrar posição de um elemento no array
 let index = techs.indexOf('css') //Qual é o idnex do css?
 console.log(index, 1) // encontrei a pósição, agora se eu quiser excluir, bastaa pegar a posilção e dar um techs.splice(index, ')
