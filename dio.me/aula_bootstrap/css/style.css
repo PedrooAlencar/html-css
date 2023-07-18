@@ -1,0 +1,16 @@
+
+.navbar-brand{ /* Deixando logo distante da lateral*/
+    padding-left: 10px;
+}
+.navbar{ /* Cor do menu*/
+    background-color: #FFE3CC;
+}
+.nav-link{ /* Texto do menu*/
+    color: #8F797E;
+}
+.quem-somos{
+    background-color: #8F797E;
+    color: #FFE3CC;
+    text-align: center;
+    padding-top: 30px;
+}

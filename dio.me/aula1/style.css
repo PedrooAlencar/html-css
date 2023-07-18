@@ -1,5 +1,5 @@
 body{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     padding-top: 10px;
 }
@@ -11,8 +11,6 @@ body{
 .perfil{
     width: 100px;
     height: 120px;
-    border-radius: 50%;
-    
 }
 .posts{
     padding: 10px;
@@ -27,4 +25,8 @@ body{
 }
 a{
     text-decoration: none;
+}
+.lista{
+    list-style-type: none;
+    padding-left: 0px;
 }
