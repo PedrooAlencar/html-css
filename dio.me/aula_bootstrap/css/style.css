@@ -1,6 +1,13 @@
-
+body{
+    height: 2000px;
+    background-color: #8F797E;
+    color: #FFE3CC;
+}
+.margin{
+    padding: 30px 0px 30px 0px;
+}
 .navbar-brand{ /* Deixando logo distante da lateral*/
-    padding-left: 10px;
+    padding-left: 50px;
 }
 .navbar{ /* Cor do menu*/
     background-color: #FFE3CC;
@@ -8,9 +15,17 @@
 .nav-link{ /* Texto do menu*/
     color: #8F797E;
 }
-.quem-somos{
+.quem-somos, .inicio{
     background-color: #8F797E;
     color: #FFE3CC;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 0px 30px 0px;
+}
+.img-produtos{
+    border-radius: 10px;
+}
+.descricao{
+    margin: auto;
+    text-align: justify;
+    width: 1200px;
 }
