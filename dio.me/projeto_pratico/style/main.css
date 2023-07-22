@@ -1,0 +1,79 @@
+:root{
+    --azul: rgb(79, 251, 251);
+    --preto: rgb(23, 22, 22);
+}
+/*Elementos base*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Não rompe a barreira da caixa*/ 
+}
+body{
+    background-color: var(--preto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+header .container{ /*O espaço significa que .container está dentro de header*/
+    display: flex;
+    align-items: center; /*Centraliza textos na linha*/
+    justify-content: space-between; /*Espaça o item e o manda para o final da pagina, deixa uma distancia entre eles*/
+}
+header .logo{
+    margin-left: 10px;
+    color: var(--azul);
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    padding-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*Filme principal*/
+
+.tela-principal{
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)100%), url('../img/lol-loud.jpg') top center no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+    display: flex; /*Separa os botões do testo*/
+    flex-direction: column; /* Deixa os botões em coluna*/
+    justify-content: center; /* Leva os itens para o centro/ segue a mesma direção do flex direction*/
+    align-items: flex-start; /*Inicia pelo lado esquerdo da tela*/
+    padding-left: 20px;
+}
+
+.tela-principal .titulo{
+    margin-top: 20%;
+    font-size: 40px;
+}
+.tela-principal .descricao{
+    margin-bottom: 80px;
+    width: 600px;
+}
+.botao{
+    background-color: rgb(0, 0, 0, 0.50);
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+    margin-right: 20px;
+    padding: 15px 30px;
+
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 0.5s;
+}
+.botao i{
+    margin-right: 5px;
+}
