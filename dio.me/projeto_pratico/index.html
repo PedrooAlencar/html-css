@@ -6,6 +6,9 @@
     <title>Gameflix</title>
     <link rel="stylesheet" href="style/main.css">
 
+    <!--Parte responsiva-->
+    <link rel="stylesheet" href="style/responsive.css">
+
     <!--arquivos owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
@@ -18,7 +21,7 @@
                 <a href="#inicio">Início</a>
                 <a href="#lol">League of Legends</a>
                 <a href="#valorant">Valorant</a>
-                <a href="#cs">Counter Strike</a>
+              <!--  <a href="#cs">Counter Strike</a>-->
             </nav>
         </div>
     </header>
@@ -29,10 +32,12 @@
                 <h3 class="titulo">LEAGUE OF LEGENDS</h3>
                 <p class="descricao">Fique por dentro de todos os campeonatos ao vivo de League of Legends ao redor do mundo, veja agora os games que estão rolando.</p>
                 <div class="botoes"> <!--Div container herda as caracteristicas da div tela-principal, porém a div botoes não herda, pois de padrão ela vem como block, e permanece assim-->
-                    <button role="button" class="botao"> <!--Role="button" define que é um botão, alguns navegadores não reconhecem sem a demonstração do role-->
-                        <i class="fa-solid fa-play"></i>
-                        ASSISTIR AGORA
-                    </button>
+                    <a href="lol.html">
+                        <button role="button" class="botao"> <!--Role="button" define que é um botão, alguns navegadores não reconhecem sem a demonstração do role-->
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </a>
                     <button role="button" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
@@ -45,46 +50,54 @@
     <div class="carrossel-filmes" id="lol"> <!--Carrossel lol-->
         <h1 class="titulo-carrossel">League of Legends</h1>
         <div class="owl-carousel owl-theme">
-            <a target="_blank" href="https://www.twitch.tv/cblol">
+            <a href="lol.html">
                 <div class="item">
                     <img class="box-filme" src="img/cblol.png" alt="cblol" srcset="">
                 </div>
             </a>
-            <div class="item">
-                <img class="box-filme" src="img/lcs.png" alt="lcs" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/lpl.png" alt="lpl" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/lec.png" alt="lec" srcset="">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
-            </div>
+            <a target="_blank" href="https://www.twitch.tv/lcs">
+                <div class="item">
+                    <img class="box-filme" src="img/lcs.png" alt="lcs" srcset="">
+                </div>
+            </a>
+            <a target="_blank" href="https://www.twitch.tv/lpl">
+                <div class="item">
+                    <img class="box-filme" src="img/lpl.png" alt="lpl" srcset="">
+                </div>
+            </a>
+            <a target="_blank" href="https://www.twitch.tv/lec">
+                <div class="item">
+                    <img class="box-filme" src="img/lec.png" alt="lec" srcset="">
+                </div>
+            </a>
+            <a target="_blank" href="https://www.twitch.tv/lck">
+                <div class="item">
+                    <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
+                </div>
+            </a>
         </div>
         <div class="carrossel-filmes" id="valorant"> <!--Carrossel Valorant-->
             <h1 class="titulo-carrossel">Valorant</h1>
             <div class="owl-carousel owl-theme" >
-                <a target="_blank" href="https://www.twitch.tv/cblol">
+                <a target="_blank" href="">
                     <div class="item">
-                        <img class="box-filme" src="img/cblol.png" alt="cblol" srcset="">
+                        <img class="box-filme" src="img/americas.png" alt="lcs" srcset="">
                     </div>
                 </a>
-                <div class="item">
-                    <img class="box-filme" src="img/lcs.png" alt="lcs" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/lpl.png" alt="lpl" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/lec.png" alt="lec" srcset="">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
-                </div>
+                <a target="_blank" href="">
+                    <div class="item">
+                        <img class="box-filme" src="img/emea.png" alt="lpl" srcset="">
+                    </div>
+                </a>
+                <a target="_blank" href="">
+                    <div class="item">
+                        <img class="box-filme" src="img/asia-pacifico.png" alt="cblol" srcset="">
+                    </div>
+                </a>
             </div>
-            <div class="carrossel-filmes" id="cs"> <!--Carrossel CS-->
+
+            <!--
+                <div class="carrossel-filmes" id="cs"> 
                 <h1 class="titulo-carrossel">Counter Strike</h1>
                 <div class="owl-carousel owl-theme" >
                     <a target="_blank" href="https://www.twitch.tv/cblol">
@@ -105,6 +118,7 @@
                         <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
                     </div>
                 </div>
+            -->
     </div>
     <footer>
         <div class="container">

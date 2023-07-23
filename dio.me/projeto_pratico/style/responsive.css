@@ -1,0 +1,23 @@
+@media screen and (max-width:750px){
+    header .container{
+        display:flex;
+        flex-direction: column;
+    }
+    header nav{
+        margin-bottom: 10px;
+    }
+    .tela-principal .container .titulo{
+        font-size: 24pt;
+    }
+    .botao{
+        margin-top: 5px;
+        max-width: 160px;
+        font-size: 9pt;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao{
+        width: 60%;
+    }
+}
