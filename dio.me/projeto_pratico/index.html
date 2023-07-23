@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gameflix</title>
     <link rel="stylesheet" href="style/main.css">
-    <script src="https://kit.fontawesome.com/758baafc18.js" crossorigin="anonymous"></script>
 
+    <!--arquivos owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 </head>
 <body>
     <header>
-        
-        <div class="container">
+        <div class="container" id="inicio">
             <h1 class="logo">GAMELIVE</h1>
             <nav>
-                <a href="#">Início</a>
-                <a href="#">League of Legens</a>
-                <a href="#">Valorant</a>
-                <a href="#">CS</a>
+                <a href="#inicio">Início</a>
+                <a href="#lol">League of Legends</a>
+                <a href="#valorant">Valorant</a>
+                <a href="#cs">Counter Strike</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="tela-principal">
+        <div class="tela-principal" >
             <div class="container">
                 <h3 class="titulo">LEAGUE OF LEGENDS</h3>
                 <p class="descricao">Fique por dentro de todos os campeonatos ao vivo de League of Legends ao redor do mundo, veja agora os games que estão rolando.</p>
@@ -38,8 +39,89 @@
                     </button>
                 </div>
             </div>
-            
         </div>
     </main>
+
+    <div class="carrossel-filmes" id="lol"> <!--Carrossel lol-->
+        <h1 class="titulo-carrossel">League of Legends</h1>
+        <div class="owl-carousel owl-theme">
+            <a target="_blank" href="https://www.twitch.tv/cblol">
+                <div class="item">
+                    <img class="box-filme" src="img/cblol.png" alt="cblol" srcset="">
+                </div>
+            </a>
+            <div class="item">
+                <img class="box-filme" src="img/lcs.png" alt="lcs" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/lpl.png" alt="lpl" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/lec.png" alt="lec" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
+            </div>
+        </div>
+        <div class="carrossel-filmes" id="valorant"> <!--Carrossel Valorant-->
+            <h1 class="titulo-carrossel">Valorant</h1>
+            <div class="owl-carousel owl-theme" >
+                <a target="_blank" href="https://www.twitch.tv/cblol">
+                    <div class="item">
+                        <img class="box-filme" src="img/cblol.png" alt="cblol" srcset="">
+                    </div>
+                </a>
+                <div class="item">
+                    <img class="box-filme" src="img/lcs.png" alt="lcs" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/lpl.png" alt="lpl" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/lec.png" alt="lec" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
+                </div>
+            </div>
+            <div class="carrossel-filmes" id="cs"> <!--Carrossel CS-->
+                <h1 class="titulo-carrossel">Counter Strike</h1>
+                <div class="owl-carousel owl-theme" >
+                    <a target="_blank" href="https://www.twitch.tv/cblol">
+                        <div class="item">
+                            <img class="box-filme" src="img/cblol.png" alt="cblol" srcset="">
+                        </div>
+                    </a>
+                    <div class="item">
+                        <img class="box-filme" src="img/lcs.png" alt="lcs" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/lpl.png" alt="lpl" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/lec.png" alt="lec" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/lck.png" alt="lck" srcset="">
+                    </div>
+                </div>
+    </div>
+    <footer>
+        <div class="container">
+            <h1>GAMELIVE</h1>
+             <nav>
+                <a href="#">Redes sociais</a> <br>
+                <a href="#">Dúvidas</a> <br>
+                <a href="#">Trabalhe conosco</a> <br>
+                <a href="#">Contato</a>
+             </nav>
+         </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/758baafc18.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    
 </body>
 </html>
