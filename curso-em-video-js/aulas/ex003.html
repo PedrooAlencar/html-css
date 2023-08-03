@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula3</title>
+    <style>
+        body{
+            background-color: rgb(3, 0, 33);
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora IMC</h1>
+    <p>Siga o passo a passo para saber o nível do seu peso</p>
+
+    <script>
+        var peso = Number.parseFloat(window.prompt('Digite a seu peso'))
+        var altura = Number.parseFloat(window.prompt('Digite sua altura'))
+        var imc = peso / (altura * altura)
+
+        if(imc > 0 && imc < 16){
+            window.alert('Você está com Subpeso Severo: ' + imc)
+        } else if(imc >= 16 && imc <=19.9) {
+            window.alert('Você está com Subpeso: ' + imc)
+        } else if(imc >= 20 && imc <=24.9){
+            window.alert('Você está com peso Normal: ' + imc)
+        } else if(imc >= 25 && imc <=29.9){
+            window.alert('Você está com Sobrepeso: ' + imc,2)
+        } else if(imc >= 30 && imc <=39.9){
+            window.alert('Você está com peso Normal: ' + imc)
+        } else if(imc >= 40){
+            window.alert('Você está com peso Mórbido: ' + imc)
+        } else {
+            window.alert('Erro' + imc)
+        }
+    
+        
+    </script>
+</body>
+</html>
