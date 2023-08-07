@@ -6,15 +6,25 @@
     <title>Aula3</title>
     <style>
         body{
-            background-color: rgb(3, 0, 33);
-            color: aliceblue;
+            background-color: rgb(101, 101, 101);
+            color: antiquewhite;
+            padding-top: 10%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30pt;
+            text-align: center;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+        }
+        ul{
+            font-size: 16pt;
+            
+        }
+        margin{
+            padding-bottom: 10%;
         }
     </style>
 </head>
 <body>
     <h1>Calculadora IMC</h1>
-    <p>Siga o passo a passo para saber o nível do seu peso</p>
 
     <script>
         var peso = Number.parseFloat(window.prompt('Digite a seu peso'))
@@ -22,22 +32,28 @@
         var imc = peso / (altura * altura)
 
         if(imc > 0 && imc < 16){
-            window.alert('Você está com Subpeso Severo: ' + imc)
+            document.write('Você está com Subpeso Severo: ' + imc.toFixed(2))
         } else if(imc >= 16 && imc <=19.9) {
-            window.alert('Você está com Subpeso: ' + imc)
+            document.write('Você está com Subpeso: ' + imc.toFixed(2))
         } else if(imc >= 20 && imc <=24.9){
-            window.alert('Você está com peso Normal: ' + imc)
+            document.write('Você está com peso Normal: ' + imc.toFixed(2))
         } else if(imc >= 25 && imc <=29.9){
-            window.alert('Você está com Sobrepeso: ' + imc,2)
+            document.write('Você está com Sobrepeso: ' + imc.toFixed(2))
         } else if(imc >= 30 && imc <=39.9){
-            window.alert('Você está com peso Normal: ' + imc)
+            document.write('Você está com Obesidade: ' + imc.toFixed(2))
         } else if(imc >= 40){
-            window.alert('Você está com peso Mórbido: ' + imc)
+            document.write('Você está com peso Mórbido: ' + imc.toFixed(2))
         } else {
-            window.alert('Erro' + imc)
+            document.write(`Erro ${imc}`) //Placeholder = `$imc` concatena
         }
-    
-        
     </script>
+    <br><br>
+    <ul>
+        <li>MENOR QUE 19,9	SUBPESO</li>
+        <li>ENTRE 19,5 E 24,9	NORMAL</li>
+        <li>ENTRE 25,0 E 29,9	SOBREPESO</li>
+        <li>ENTRE 30,0 E 39,9	OBESIDADE</li>
+        <li>MAIOR QUE 40,0	OBESIDADE GRAVE</li>
+    </ul>
 </body>
 </html>
