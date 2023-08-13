@@ -6,20 +6,22 @@
     <title>Pratica feita por mim</title>
     <style>
         body{
-            background-color: rgb(63, 63, 63);
-            color: white;
+            background-color: rgb(167, 167, 167);
+            color: rgb(255, 255, 255);
             text-align: center;
             font-size: 16pt;
-            font-family: cursive;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
         }
         main{
             color: black;
             margin: auto;
-            background-color: aliceblue;
+            background-color: rgba(255, 255, 255, 0.223);
             width: 500px;
             height: 450px;
-            border-radius: 15px;
-            box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.497);
+            border-radius: 5px;
+            border: solid 2px white;
+            box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.275);
         }
         main div{
             padding-top: 10px;
@@ -34,13 +36,13 @@
 </head>
 <body id="fundo">
     <header>
-        <h1>Hora do dia</h1>
+        <h1>HORA DO DIA</h1>
     </header>
     <main>
-        <div id="msg">
+        <div >
             Agora são <input type="text" id="txth"> horas <input type="button" value="Verificar" onclick="Clicar()">
         </div>
-        <div id="imagem" > 
+        <div id="msg" > 
             <!--<img id="manha" src="img/dia.webp" alt="Dia">-->
             <!--<img id="tarde" src="img/tarde.jpg" alt="Tarde">
             <img id="noite" src="img/noite.jpg" alt="Noite">-->
@@ -59,24 +61,25 @@
             var fundo = window.document.getElementById('fundo')
     
             if(txthoras < 6){
-                msg.innerHTML = `Agora é madrugada, são ${txthoras}h`
-                fundo.style.background = 'black'
+                msg.innerHTML = `Brasil, <strong>noite</strong>: ${txthoras}h <br>`
+                fundo.style.background = '#372f44'
                 img.setAttribute('src', 'img/noite.png')
             } else if(txthoras < 12){
-                msg.innerHTML = `Agora é manhã, são ${txthoras}h`
-                fundo.style.background = 'aquamarine'
+                msg.innerHTML = `Brasil, <strong>manhã</strong>: ${txthoras}h <br>`
+                fundo.style.background = '#bab6c7'
                 img.setAttribute('src', 'img/manha.png')
             } else if(txthoras < 18){
-                msg.innerHTML = `Agora é tarde, são ${txthoras}h`
-                fundo.style.background = 'green'
+                msg.innerHTML = `Brasil, <strong>tarde</strong>: ${txthoras}h <br>`
+                fundo.style.background = '#e1c11e'
                 img.setAttribute('src', 'img/tarde.png')
             } else if (txthoras >= 18 && txthoras < 24){
-                msg.innerHTML = `Agora é noite, são ${txthoras}h`
-                fundo.style.background = 'darkblue'
+                msg.innerHTML = `Brasil, <strong>noite</strong>: ${txthoras}h <br>`
+                fundo.style.background = '#423143'
                 img.setAttribute('src', 'img/noite.png')
             } else{
                 msg.innerHTML = `Horário inexistente, digite novamente`
-                fundo.style.background = 'red'
+                fundo.style.background = '#65002d'
+                img.setAttribute('src', 'img/inex.png')
             }
             msg.appendChild(img) //mostra na tela a imagem filtrada pela condição acima
         }
