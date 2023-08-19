@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica feita por mim</title>
+    <style>
+        body{
+            background-color: rgb(0, 174, 255);
+            color: white;
+            font-size: 16pt;
+            font-family: cursive;
+        }
+        h1{
+            text-align: center;
+        }
+        main{
+            color: black;
+            margin: auto;
+            background-color: aliceblue;
+            width: 500px;
+            height: 100%;
+            border-radius: 15px;
+            box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.497);
+            padding: 10px 0 0 20px;
+        }
+        main div{
+            padding-top: 10px;
+
+        }
+        img{
+            margin-top: 10px;
+            width: 350px;
+            height: 350px;
+            border-radius: 100%;
+        }
+        footer{
+            text-align: center;
+        }
+        .res{
+            
+        }
+
+    </style>
+</head>
+<body id="fundo">
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main>
+        <div id="msg">
+            Início <input type="text" id="inicio"> <br>
+            Fim <input type="text" id="fim"> <br>
+            Passo <input type="text" id="passo"> <br>
+
+            <input type="button" value="Verificar" onclick="Clicar()">
+            <input type="button" value="Limpar" onclick="Limpar()">
+        </div>
+        <div id="res">
+            Contando
+        </div>
+    </main>
+    <footer>
+        <p>@peedro01_</p>
+    </footer>
+
+    <script>
+        function Clicar(){
+
+            var i = window.document.getElementById('inicio')
+            var f = window.document.getElementById('fim')
+            var p = window.document.getElementById('passo')
+            var res = window.document.getElementById('res')
+
+            var inicio = Number(i.value)
+            var fim = Number(f.value)
+            var passo = Number(p.value)
+    
+            for (var inic = inicio; inic <= fim; inic += passo ){
+               res.innerHTML += `${inic} `
+            }
+        }
+
+        function Limpar(){
+            res.innerHTML = ``
+        }
+    </script>
+</body>
+</html>
